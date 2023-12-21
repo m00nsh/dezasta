@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* css リセット */
+
+/* 利用するタグによってこちらの内容は増やす */
+/* 
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl {
+  margin: 0;
+  padding: 0;
+   line-height: 1; 
+   /* 1行当たりの高さ
+/* 
+/* デフォルトの文字色、font-familyをあらかじめ当てておく 
+  color: #4c4c4c;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  /* 　css ゴシック体　入力　で検索したらデフォルトが出てくるためそれをコピペすればいい。  
+} */
+/* 
+a {
+   /* 下線を消す  
+  text-decoration: none;
+  /* 色を消す 
+  color: inherit;
+}
+
+ul {
+  /* 左の「・」を消す 
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  /* → 画像のサイズのまま表示してくださいね 
+  vertical-align: bottom;
+  /* → 画像を読み込むとたまに下側に余白ができることがある（詳細不明）ため、
+  それをはじめからなくすために下側に配置 
+  border: none;
+  /* → 枠線つけないでねってこと。 
+} */
+
+/* work1 */
+
+body,
+h1,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+    "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+    "Meiryo", "verdana", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
