@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+/* 共通クラス */
+
+body {
+  font-size: 100%;
+  color: #4f260b;
+  background-color: #e8d9bf;
+}
+
+.logo {
+  width: 227px;
+}
+
+h2 {
+  text-align: center;
+}
+
+section,
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* padding: 0 10px; */
+}
+
+/* header */
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 2.51%; /* = 50px/1990px */
+  padding-right: 6.73%; /* = 134px/1990px */
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: 9999;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-item {
+  color: #fff;
+  font-size: 18px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+}
+
+/* kv */
+.kv {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 105px;
+}
+
+.kv-ttl {
+  font-size: 82px;
+  margin-bottom: 50px;
+  line-height: 1.17;
+}
+
+.kv-ttl::before {
+  content: "Have a happy day From a cup of coffee.";
+  font-size: 30px;
+  display: block;
+  margin-bottom: 58px;
+}
+
+.kv-txt {
+  font-size: 23px;
+  line-height: 1.7;
+}
+
+/* about */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 8%;
+  padding-top: 100px;
+}
+
+.about-img {
+  width: 272px;
+}
+
+.about-kv {
+  width: 50%;
+}
+
+.about-kv img {
+  border-radius: 0 0 100px 0;
+  height: 560px;
+  object-fit: cover;
+}
+
+.about-txt-box {
+  width: 42%;
+}
+
+.about-ttl {
+  font-size: 44px;
+  margin: 60px 0 37px;
+  line-height: 1.38;
+}
+
+.about-txt {
+  font-size: 16px;
+  line-height: 1.58;
+}
+
+/* menu */
+#menu {
+  padding-top: 105px;
+}
+
+.menu-img {
+  width: 151px;
+}
+
+.menu-wrap {
+  margin-top: 50px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.menu-item {
+  width: 30%;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 0 25px 0 0;
+}
+
+.menu-item h3 {
+  color: #d30202;
+  font-size: 38px;
+  margin-top: -10px;
+}
+
+.menu-txt {
+  font-size: 17px;
+  margin-top: 20px;
+  line-height: 1.47;
+}
+
+/* gallery */
+#gallery {
+  max-width: 100%;
+  margin-top: 80px;
+  padding: 0;
+}
+
+.gallery-img {
+  width: 245px;
+}
+
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  margin-top: 25px;
+  overflow: hidden;
+}
+
+/* .gallery-wrap img {
+  width: 384px;
+} */
+
+/* event */
+#event {
+  margin-top: 70px;
+}
+.event-img {
+  width: 174px;
+}
+
+.event-box {
+  border: 2px solid #4f260b;
+  background-color: #ffff;
+  margin-top: 41px;
+  width: 100%;
+}
+
+.event-list {
+  margin: 0 auto;
+  padding: 4.4% 0;
+  width: 70%;
+}
+
+.event-content {
+  font-size: 23px;
+  display: flex;
+}
+
+.date {
+  padding-right: 6%;
+}
+
+.event-content:nth-child(2) {
+  margin: 28px 0;
+}
+
+.event-txt a {
+  text-decoration: underline;
+}
+
+/* access */
+#access {
+  max-width: 100%;
+  margin: 80px auto;
+  padding: 0;
+}
+
+.access-img {
+  width: 214px;
+}
+
+iframe {
+  width: 100%;
+  filter: grayscale(100%) invert(90%) contrast(80%);
+}
+
+/* footer */
+.footer-content {
+  display: flex;
+  text-align: start;
+  gap: 7%;
+}
+
+.footer-txt {
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+.footer-copy {
+  font-size: 16px;
+  text-align: center;
+  margin: 58px 0 80px;
+}
+
+/* スクロール */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes progress {
+  0% {
+    bottom: -40%;
+  }
+  40% {
+    bottom: -40%;
+  }
+  45% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 8%;
+  }
+  100% {
+    bottom: 8%;
+  }
+}
+
+.to-top {
+  position: fixed;
+  bottom: 8%;
+  right: 4%;
+  width: 125px;
+  animation: progress linear;
+  animation-timeline: scroll(
+    block nearest
+  ); /* cssチェッカーで「存在しないプロパティ」と表示される。 */
+  transition: bottom 1s ease;
+  z-index: 2;
+}
