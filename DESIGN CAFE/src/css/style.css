@@ -20,7 +20,7 @@ section,
 footer {
   max-width: 1000px;
   margin: 0 auto;
-  /* padding: 0 10px; */
+  padding: 0 10px;
 }
 
 /* header */
@@ -171,12 +171,12 @@ footer {
   align-items: center;
   height: 300px;
   margin-top: 25px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-/* .gallery-wrap img {
-  width: 384px;
-} */
+.gallery-wrap img {
+  width: 20%;
+}
 
 /* event */
 #event {
@@ -225,6 +225,7 @@ footer {
 
 .access-img {
   width: 214px;
+  margin-bottom: 47px;
 }
 
 iframe {
@@ -284,4 +285,8 @@ html {
   ); /* cssチェッカーで「存在しないプロパティ」と表示される。 */
   transition: bottom 1s ease;
   z-index: 2;
+}
+
+.to-top a:hover {
+  opacity: 0.9;
 }
