@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* 共通クラス */
+html {
+  background-color: #f5f5f5;
+}
+
+body {
+  color: #2f2f2f;
+}
+
+.sp {
+  display: none;
+}
+
+.pc {
+  display: block;
+}
+
+/* btn */
+.contact-btn {
+  max-width: 29%; /* 400/1366 */
+  width: 100%;
+  margin: 0 auto;
+  padding: 2% 0;
+  text-align: center;
+  display: block;
+}
+
+.contact-btn.__contact {
+  color: #4a4a4a;
+  background-color: #e6e6e6;
+  font-size: 30px;
+}
+.contact-btn.__footer {
+  color: #000;
+  border: 1px solid #000;
+  font-size: 40px;
+}
+
+h1,
+h2,
+h3,
+.main-ttl-box p,
+.nav-item,
+.main-txt,
+.contact-btn {
+  font-family: "Radley", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2.5px;
+}
+
+.logo {
+  font-size: 48px;
+}
+
+/* header */
+.header-inner {
+  width: 100%;
+  padding: 0 20% 0;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  z-index: 2;
+}
+
+.header-inner.__logo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.hamburger {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  right: 30px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.hamburger span {
+  position: absolute;
+  content: "";
+  /* 図形を作るときはposition:absolute;と、content:"";はセットで必要。反映されないから。 */
+  width: 30px;
+  height: 1px;
+  background-color: #333333;
+  top: 14px;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: #333333;
+  transition: 0.3s;
+  /* 形になる前の状態を、3秒かけて意図する形に持って行く。必ず、前の状態のものにつける*/
+}
+
+.hamburger span::before {
+  top: -10px;
+}
+.hamburger span::after {
+  bottom: -10px;
+}
+/* +値よりマイナス値の方がいいかも */
+
+/* 三本線を×印に */
+.open span {
+  background-color: transparent; /* 色を無効化するcss */
+}
+.open span::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.open span::after {
+  transform: rotate(45deg);
+  bottom: 0;
+}
+/* はみ出した部分がはみ出して、交点で交わり、バッテンが見える。 */
+
+.hamburger.__other span,
+.hamburger.__other span::before,
+.hamburger.__other span::after {
+  background-color: #f5f5f5;
+}
+
+/* nav */
+
+.header-nav {
+  display: none;
+}
+
+.header-nav {
+  position: absolute;
+  background-color: #00000091;
+  width: 100%;
+  height: 100vh; /* どんな画面であっても要素を広げてくれる */
+  z-index: 9999;
+}
+
+.nav-list.__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* ulがliの分しか高さを持っていないので、height:100vhで広げてあげる */
+  gap: 20px;
+}
+
+.nav-item.__header {
+  color: #fff;
+}
+
+.nav-item.__footer {
+  font-size: 18px;
+  margin: 4.8% 0;
+}
+
+/* footer */
+#footer {
+  max-width: 100%;
+  background-color: #2f2f2f;
+  position: relative;
+}
+
+.footer-contact {
+  border-radius: 0 0 45% 45%;
+  padding: 5% 0 8%;
+}
+
+.footer-contact.__main {
+  background-image: url(../img/monokuro-footer.jpg);
+  background-size: cover;
+}
+
+.footer-contact.__contact {
+  background-color: #f5f5f5;
+  height: 20vw;
+}
+
+.footer-contact.__thanks {
+  background-color: #4a4949e4;
+  height: 20vw;
+}
+
+.footer-contact-txt p {
+  margin-bottom: 3.5%;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  color: #fff;
+  padding: 4% 6%;
+}
+
+.footer-content,
+.footer-list {
+  width: 50%;
+}
+
+.footer-contact,
+.footer-copy {
+  text-align: center;
+}
+
+.footer-content {
+  text-align: left;
+}
+
+.footer-list {
+  text-align: right;
+}
+
+.footer-txt,
+.skill {
+  font-size: 14px;
+}
+
+.footer-txt {
+  margin: 4% 0;
+}
+
+.footer-copy {
+  color: #fff;
+  font-size: 12px;
+  background-color: #000;
+  padding: 1% 0;
+}
