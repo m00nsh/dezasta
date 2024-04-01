@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/script.js"></script>
+    <!-- thanks page遷移 -->
+    <script type="text/javaScript">
+      let submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted){window.location='thanks.html';}"
+    ></iframe>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,22 +56,30 @@
     </header>
 
     <main class="thanks">
-      <section class="thanks-wrap js-fade-side">
-        <h3 class="thanks-ttl">THANK YOU</h3>
-        <p class="thanks-txt __top">
-          お問い合わせの受付を完了しました。
-          <br />１週間以内に、ご返信させていただきます。
-        </p>
-        <p class="thanks-txt">
-          しばらく経ってもメールが届かない場合は、
-          <br />迷惑フォルダに割り振られている可能性があります。
-        </p>
-        <p class="thanks-txt __p">
-          迷惑メールフォルダに入っていない場合は、
-          <br />別のメールアドレスでお手続きをされた可能性がありますので、
-          <br />こちらも併せてご確認ください。
-        </p>
-      </section>
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScxvUft_CEx9mCT-zz9i-0LMQIEPwVSvgrSoKGtppczkVhMYQ/formResponse"
+        method="post"
+        target="hidden_iframe"
+        onsubmit="submitted=true;"
+      >
+        <section class="thanks-wrap js-fade-side">
+          <h3 class="thanks-ttl">THANK YOU</h3>
+          <p class="thanks-txt __top">
+            お問い合わせの受付を完了しました。
+            <br />１週間以内に、ご返信させていただきます。
+          </p>
+          <p class="thanks-txt">
+            しばらく経ってもメールが届かない場合は、
+            <br />迷惑フォルダに割り振られている可能性があります。
+          </p>
+          <p class="thanks-txt __p">
+            迷惑メールフォルダに入っていない場合は、
+            <br />別のメールアドレスでお手続きをされた可能性がありますので、
+            <br />こちらも併せてご確認ください。
+          </p>
+        </section>
+      </form>
+
       <footer id="footer" class="js-fade-side">
         <!-- <div class="footer-contact __thanks"></div> -->
         <div class="footer-inner __thanks">

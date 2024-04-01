@@ -46,24 +46,113 @@
     </header>
 
     <main>
-      <div class="contact-kv js-fade">
+      <div class="contact-kv">
         <h2 class="page-ttl">CONTACT</h2>
       </div>
-      <div class="contact-wrap js-fade">
+      <div class="contact-wrap js-fade-side">
         <p class="contact-txt">
           ご相談やご依頼はこちらのフォームよりお願いします。
           <br />ページ下部の「
-          <a href="#anser">よくあるご質問</a>」もお読みください。
+          <span class="answer"><a href="#anser">よくあるご質問</a></span
+          >」もお読みください。
+        </p>
+        <p class="contact-txt">
+          ご意見やご感想、励ましの声もお待ちしております。
         </p>
       </div>
-      <div class="contact-form"></div>
-      <div id="anser" class="js-fade-side">
-        <h3>よくあるご質問</h3>
-        <div class="anser-content">
-          <ul class="anser-list">
-            <li class="anser-1 js-fade-side">ああああ</li>
+      <!-- contact form -->
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScxvUft_CEx9mCT-zz9i-0LMQIEPwVSvgrSoKGtppczkVhMYQ/formResponse"
+        method="post"
+      >
+        <div class="form js-fade-side">
+          <div class="form-item">
+            <p class="form-item-label">お名前&lowast;</p>
+            <input
+              name="entry.2005620554"
+              type="text"
+              class="form-item-input"
+              required="required"
+            />
+          </div>
+          <div class="form-item">
+            <p class="form-item-label">会社名</p>
+            <input
+              name="entry.1045781291"
+              type="text"
+              class="form-item-input"
+            />
+          </div>
+          <div class="form-item">
+            <p class="form-item-label">住所</p>
+            <input
+              name="entry.1065046570"
+              type="text"
+              class="form-item-input"
+            />
+          </div>
+          <div class="form-item">
+            <p class="form-item-label">電話番号&lowast;</p>
+            <input
+              name="entry.1166974658"
+              type="text"
+              class="form-item-input"
+            />
+          </div>
+          <div class="form-item">
+            <p class="form-item-label">メールアドレス&lowast;</p>
+            <input
+              name="entry.839337160"
+              type="email"
+              class="form-item-input"
+            />
+          </div>
+          <div class="form-item">
+            <p class="form-item-label isMsg">お問い合わせ内容&lowast;</p>
+            <textarea
+              name="entry.2018473845"
+              class="form-item-textarea"
+              placeholder="ご依頼の場合は、既存のサイトの有無や希望納期なども記入をお願いします。"
+            ></textarea>
+          </div>
+          <input type="submit" class="form-btn" value="送信" />
+        </div>
+        <!--  -->
+      </form>
+
+      <div id="answer" class="answer-wrap js-fade-side">
+        <h3 class="answer-ttl">よくあるご質問</h3>
+        <div class="answer-content">
+          <ul class="answer-list">
+            <li class="answer-accordion">
+              <div class="accordion_header">aaaaaa</div>
+              <div class="i_box">
+                <i class="one_i"></i>
+              </div>
+              <div class="accordion_inner">
+                <div class="box_one">
+                  <p class="txt_a_ac">アコーディオンの中身です。</p>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
+        <!-- アコーディオン -->
+        <div class="section s_02">
+          <div class="answer-accordion">
+            <div class="accordion_header">
+              アコーディオン、一つ開けると他は閉じる
+              <div class="i_box"><i class="one_i"></i></div>
+            </div>
+            <div class="accordion_inner">
+              <div class="box_one">
+                <p class="txt_a_ac">アコーディオンの中身です。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
       </div>
     </main>
 

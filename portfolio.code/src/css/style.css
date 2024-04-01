@@ -57,9 +57,17 @@
   z-index: 20;
 }
 
+@keyframes scroll-anime {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 .back {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-image: url(../img/back-c.png);
   background-repeat: repeat-x;
   background-size: 100% auto;
@@ -81,7 +89,7 @@
   background-repeat: repeat-x;
   background-size: 100% auto;
   background-position: top;
-  animation: scroll-anime 5s linear infinite;
+  animation: scroll-anime 20s linear infinite;
 }
 .back::after {
   content: "";
@@ -95,7 +103,7 @@
   background-repeat: repeat-x;
   background-size: 100% auto;
   background-position: bottom;
-  animation: scroll-anime 10s linear infinite;
+  animation: scroll-anime 25s linear infinite;
 }
 
 .concept-inner,
@@ -292,11 +300,140 @@ h4 {
   background-color: #333333e6;
 }
 
+.contact-txt {
+  text-align: center;
+}
+
+/* contact-form */
+.form {
+  max-width: 60%;
+  margin: 80px auto;
+}
+
+.form-item {
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+.form-item-label {
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.form-item-label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+
+.form-item-input {
+  border: 1px solid #fff;
+  height: 48px;
+  width: 100%;
+  background: #fff;
+  font-size: 18px;
+}
+
+.form-item-textarea {
+  border: 1px solid #fff;
+  height: 300px;
+  width: 100%;
+  background: #fff;
+  font-size: 18px;
+}
+
+.form-btn {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: #2f2f2f;
+  width: 100%;
+  margin: 100px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.answer {
+  color: #7b7777;
+  text-decoration: underline;
+}
+
+.answer-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 8%;
+}
+
+.answer-ttl::before {
+  content: "";
+  border-left: 3px solid #2f2f2f;
+  margin-right: 20px;
+}
+
 .page-ttl {
   font-size: 40px;
   color: #fff;
   text-align: center;
   margin: 0 auto;
+}
+
+/* アコーディオン */
+.answer-content,
+.answer-accordion {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.answer-content .answer-accordion .accordion_header {
+  font-size: 26px;
+  font-weight: bold;
+  padding: 20px 11%;
+  text-align: center;
+  position: relative;
+  z-index: +1;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.answer-content .answer-accordion .accordion_header:hover {
+  opacity: 0.8;
+}
+.answer-content .answer-accordion .accordion_header .i_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  margin-top: -20px;
+  box-sizing: border-box;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform-origin: center center;
+  transition-duration: 0.2s;
+}
+
+.answer-content .answer-accordion .accordion_header .i_box .one_i {
+  display: block;
+  width: 18px;
+  height: 18px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform-origin: center center;
+  transition-duration: 0.2s;
+  position: relative;
+}
+.answer-content .answer-accordion .accordion_inner {
+  display: none;
+  padding: 30px 30px;
+  box-sizing: border-box;
 }
 
 /* thanks */
@@ -347,5 +484,42 @@ h4 {
 
   .thanks-txt {
     font-size: 14px;
+  }
+
+  /* form 訂正前 */
+  .form {
+    max-width: 80%;
+  }
+  .form-item-label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  .form-item-label.isMsg {
+    margin-top: 0;
+  }
+
+  .form-item-input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+
+  .form-item-textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+
+  .form-btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
   }
 }
