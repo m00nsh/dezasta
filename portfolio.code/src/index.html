@@ -9,9 +9,10 @@
       content="お客様との対話を重ね、目的にあったWebサイトを、デザインからWeb制作までこなすMO/CHIのポートフォリオサイトです。"
     />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
     <script src="./js/script.js"></script>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,7 +42,7 @@
     </header>
 
     <main>
-      <div class="mv js-fade">
+      <div class="mv js-box">
         <div class="main-ttl-box">
           <p>Welcome<br />to</p>
           <h2 class="main-ttl">MO/CHI's PORTFOLIO</h2>
@@ -83,7 +84,7 @@
       <div id="works">
         <div class="works-wrap js-fade-side">
           <ul class="works-list">
-            <li class="works-item">
+            <li class="works-item js-filter">
               <a href="./works/work-dez.html">
                 <img
                   src="img/dezastamobile-lp.jpg"
@@ -92,7 +93,7 @@
                 />
               </a>
             </li>
-            <li class="works-item">
+            <li class="works-item js-filter">
               <a href="./works/work-work.html">
                 <img
                   src="img/workers-mokku.jpg"
@@ -101,7 +102,7 @@
                 />
               </a>
             </li>
-            <li class="works-item">
+            <li class="works-item js-filter">
               <a href="./works/work-tr.html">
                 <img
                   src="img/trrrip-lp.jpg"
@@ -111,7 +112,7 @@
               </a>
             </li>
 
-            <li class="works-item">
+            <li class="works-item js-filter">
               <a href="./works/work-life.html">
                 <img
                   src="img/life-mokk.jpg"

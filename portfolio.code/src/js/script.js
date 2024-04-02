@@ -30,7 +30,11 @@ $(function () {
   });
 });
 
-// アコーディオン　コピペ修正前
+$(window).on("load", function () {
+  $(".js-box").fadeIn(1500);
+});
+
+// アコーディオン
 $(function () {
   //.accordion_oneの中の.accordion_headerがクリックされたら
   $(".answer-content .answer-accordion .accordion_header").click(function () {
@@ -45,5 +49,16 @@ $(function () {
     $(".answer-content .answer-accordion .accordion_header")
       .not($(this))
       .removeClass("open");
+  });
+});
+
+// スクロールしたら色が出る
+$(function () {
+  $(".js-filter").on("invert", function (event, isInView) {
+    if (isInView) {
+      $(this).addClass("invert");
+    } else {
+      $(this).removeClass("invert");
+    }
   });
 });
