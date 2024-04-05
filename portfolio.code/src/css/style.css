@@ -27,7 +27,7 @@
   margin-top: 3%;
 }
 /* g-sap */
-/* .mvBox {
+.mvBox {
   height: 300px;
   display: grid;
   place-items: center;
@@ -42,7 +42,7 @@
   height: 100px;
   object-fit: cover;
   display: block;
-} */
+}
 /*  */
 .mv-img {
   padding: 20px;
@@ -79,7 +79,7 @@
 }
 .mv-img figure img:nth-child(2) {
   transform: rotateY(5.085398rad) translateZ(50px); /* 画像同士の間隔を調整 */
-}
+  /* }
 .mv-img figure img:nth-child(3) {
   transform: rotateY(3.770796rad) translateZ(100px); /* 画像同士の間隔をさらに調整 */
 }
@@ -484,9 +484,9 @@ h4 {
     font-size: 30px;
   }
 
-  /* .mvBox {
+  .mvBox {
     height: 200px;
-  } */
+  }
 
   .main-ttl-box,
   .main-txt {
