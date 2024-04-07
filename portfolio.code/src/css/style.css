@@ -22,10 +22,6 @@
   margin-top: 2%;
 }
 
-.main-txt {
-  font-size: 40px;
-  margin-top: 3%;
-}
 /* g-sap */
 .mvBox {
   height: 300px;
@@ -151,11 +147,19 @@ h4 {
 .works-list {
   display: flex;
   align-items: center;
-  gap: 1.1%;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  .works-list {
+    gap: 3px;
+  }
 }
 
 /* 画像にフィルターをかける */
 .works-item {
+  width: 33%;
   transition: 0.2s linear;
   filter: grayscale(100%);
   /* フィルター色をこれで調整 */
@@ -514,14 +518,12 @@ h4 {
   }
 
   .works-list {
-    flex-wrap: wrap;
     align-items: normal;
-    gap: 5px;
   }
 
   .works-item {
     width: 49%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 
   /* works-page */

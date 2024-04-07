@@ -24,11 +24,11 @@ $(function () {
 // スクロールするとhumの色変更
 $(function () {
   $(window).on("scroll", function () {
-    const sliderHeight = $(".page-kv").height();
+    const sliderHeight = $("mv").height();
     if (sliderHeight - 30 < $(this).scrollTop()) {
-      $(".hamburger.other").addClass("hamColorScroll");
+      $(".hamburger").addClass("hamColorScroll");
     } else {
-      $(".hamburger.other").removeClass("hamColorScroll");
+      $(".hamburger").removeClass("hamColorScroll");
     }
   });
 });
