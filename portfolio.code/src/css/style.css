@@ -509,14 +509,19 @@ h4 {
 
   /* works */
   #works {
-    max-width: 90%;
-    margin: 10px auto;
+    max-width: 100%;
+    margin: 13% auto 0;
   }
 
   .works-list {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: normal;
-    gap: 10px;
+    gap: 5px;
+  }
+
+  .works-item {
+    width: 49%;
+    margin: 0 auto;
   }
 
   /* works-page */

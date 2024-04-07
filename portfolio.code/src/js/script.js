@@ -6,7 +6,7 @@ $(function () {
   $(window).on("load", function () {
     setTimeout(function () {
       end_loader();
-    }, 3000);
+    }, 2000);
   });
 });
 
@@ -21,7 +21,7 @@ $(function () {
 
 //
 
-// スクロールするとロゴの色変更
+// スクロールするとhumの色変更
 $(function () {
   $(window).on("scroll", function () {
     const sliderHeight = $(".page-kv").height();
