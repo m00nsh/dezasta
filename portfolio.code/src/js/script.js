@@ -20,6 +20,11 @@ $(function () {
 });
 
 //
+$(function () {
+  $(".hamburger").on("click", function () {
+    $(".open").toggleClass("hamColor");
+  });
+});
 
 // スクロールするとhumの色変更
 $(function () {
