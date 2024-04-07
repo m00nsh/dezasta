@@ -56,10 +56,11 @@
 }
 .mv-img figure {
   margin: 0;
-  width: 600px;
+  /* width: 600px; */
+  width: 300px;
   height: auto;
   transform-style: preserve-3d;
-  transition: transform 0.5s;
+  transition: transform 1s;
   transform-origin: 50% 50% -482.8427124746px;
 }
 .mv-img figure img {
@@ -75,7 +76,7 @@
 }
 .mv-img figure img:nth-child(2) {
   transform: rotateY(5.085398rad) translateZ(50px); /* 画像同士の間隔を調整 */
-  /* }
+}
 .mv-img figure img:nth-child(3) {
   transform: rotateY(3.770796rad) translateZ(100px); /* 画像同士の間隔をさらに調整 */
 }
@@ -85,6 +86,7 @@
 .mv-img figure img:nth-child(5) {
   transform: rotateY(2.541593rad) translateZ(100px); /* 画像同士の間隔をさらに調整 */
 }
+
 .mv-img nav {
   display: flex;
   justify-content: center;
@@ -454,9 +456,9 @@ h4 {
 .thanks-wrap {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: 15% auto;
   color: #fff;
-  padding: 30% 4% 10%;
+  padding: 0 4%;
   /* border-radius: 0 0 15% 15%; */
 }
 

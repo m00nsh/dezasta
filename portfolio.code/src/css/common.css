@@ -593,9 +593,9 @@ h3,
 .page-inner.thanks-page {
   background-color: #333333c8;
   /* position: relative; */
-  /* padding: 10px 0 100px; */
-  height: 80vh;
-  border-radius: 0 0 20% 20%;
+  padding: 0;
+  height: 80%;
+  /* border-radius: 0 0 20% 20%; */
 }
 
 /* 背景の動き */
@@ -634,7 +634,7 @@ h3,
 }
 
 .back.thanks-page span {
-  height: 100vh;
+  height: 80%;
 }
 
 .back::before {
@@ -685,7 +685,7 @@ h3,
 }
 .back.thanks-page::after {
   content: "";
-  height: 100vh;
+  height: 80%;
   background-size: 100% auto;
   bottom: 20%;
 }
