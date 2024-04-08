@@ -12,7 +12,7 @@
 
 .main-ttl-box {
   font-size: 40px;
-  line-height: 2;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
 
@@ -105,8 +105,8 @@
 
 @media screen and (max-width: 1260px) {
   .mv-img {
-    perspective: 400px;
-    height: 300px;
+    perspective: 500px;
+    height: auto;
   }
   .mv-img figure {
     width: 400px;
@@ -124,6 +124,11 @@
 .concept-inner,
 h4 {
   line-height: 2;
+}
+
+.concept-txt-box {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .concept-ttl {
@@ -483,7 +488,7 @@ h4 {
 /* sp */
 @media screen and (max-width: 768px) {
   .mv {
-    padding-top: 14%;
+    padding-top: 20%;
   }
 
   .main-ttl {
@@ -500,12 +505,12 @@ h4 {
   }
   /* concept */
   .concept-ttl {
-    font-size: 18px;
-    margin: 5% auto 10%;
+    font-size: 15px;
+    margin: 5% auto 15%;
   }
 
   .concept-txt {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 30px;
   }
 

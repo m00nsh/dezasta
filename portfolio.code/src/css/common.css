@@ -691,6 +691,21 @@ h3,
 }
 
 /* sp */
+
+@media screen and (max-width: 1100px) {
+  .back span {
+    height: 100%;
+  }
+
+  .back::before {
+    height: 100%;
+  }
+
+  .back::after {
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .sp {
     display: block;
